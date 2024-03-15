@@ -20,7 +20,7 @@
 
     <div class="form">
 
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="get">
             <h1 class="form__title">Application Form</h1>
             <fieldset class="form--reference">
                 <legend class="form-legend"> Your Roles</legend>
