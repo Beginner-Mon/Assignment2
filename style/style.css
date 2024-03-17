@@ -2082,6 +2082,24 @@ td {
     color: #ffffff;
 }
 
+.form-hyperlink {
+    text-align: center;
+    padding: 3px 0;
+
+}
+
+.form__hyperlink {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: auto;
+    transition: all .2s ease-in;
+}
+
+.form__hyperlink:hover {
+    color: #ffffff;
+}
+
 .form-1 {
     flex-wrap: wrap;
     display: flex;
@@ -2369,7 +2387,10 @@ textarea {
     .form {
         width: 100%;
         padding: 0 15px;
+
     }
+
+
 
     .form--reference {
         min-width: 100%;
@@ -2567,5 +2588,37 @@ code {
 
     .enhance--video h1 {
         font-size: 2rem;
+    }
+}
+
+/*****************************************************************************************************
+*************************************DESIGN APPLY.HTML************************************************
+******************************************************************************************************
+******************************************************************************************************
+*/
+.login--form {
+    width: 60%;
+    height: 700px;
+    text-align: center;
+
+}
+
+.login--form-label {
+    margin: 0;
+}
+
+.login__form-legend {
+    margin: 0;
+    letter-spacing: 1.3px;
+    text-transform: capitalize;
+}
+
+.form-login {
+    margin-top: auto;
+}
+
+@media (min-width:1198px) {
+    .login--form-label {
+        left: 80px;
     }
 }

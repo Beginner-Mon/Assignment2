@@ -22,10 +22,29 @@
 
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="get">
             <h1 class="form__title">Application Form</h1>
+            <p class = "form-hyperlink" ><a class="form__hyperlink" href="login.php">Already has an account</a></p>
             <fieldset class="form--reference">
                 <legend class="form-legend"> Your Roles</legend>
                 <input class="form-input" type="text" name="reference__number" id="re-num" placeholder="Reference Number" pattern="^[a-zA-Z0-9]{5}$" title="Please enter the exact 5 characters ID" required>
             </fieldset>
+            <!-- <div class="form-1">
+                <fieldset class="form-personal">
+                    <legend class="form-legend">Login</legend>
+                    <div class="form-field">
+                        <input type="text" name="first-name" id="username" class="form-input" placeholder=" "
+                            pattern="^[a-zA-Z\s]{1,20}$" maxlength="20"
+                            title="Alphebetical characters only and maximum 20 characters" required>
+                        <label for="username" class="form-label login--form-label">Username</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="first-name" id="password" class="form-input" placeholder=" "
+                            pattern="^[a-zA-Z\s]{1,20}$" maxlength="20"
+                            title="Alphebetical characters only and maximum 20 characters" required>
+                        <label for="password" class="form-label login--form-label">Password</label>
+                    </div>
+                </fieldset>
+            </div> -->
+            <?php require_once "loginForm.php" ?>
             <div class="form-1">
                 <fieldset class="form-personal">
                     <legend class="form-legend">Personal details</legend>
@@ -35,7 +54,7 @@
                     </div>
                     <div class="form-field">
                         <input type="text" name="first-name" id="lname" class="form-input" placeholder=" " pattern="^[a-zA-Z\s]{1,20}$" maxlength="20" title="Alphebetical characters only and maximum 20 characters" required>
-                        <label for="fname" class="form-label">Last Name</label>
+                        <label for="lname" class="form-label">Last Name</label>
                     </div>
                     <div class="form-field">
                         <input type="date" name="date" id="date" class="form-input" required>
@@ -125,35 +144,7 @@
 
     </div>
 
-    <!-- <footer class="footer">
 
-        <div class="footer__container">
-            <div class="footer__container--row">
-                <div class="footer__container--col footer__container--col--1">
-                    <h4 class="footer__container--col--title">Our group</h4>
-                    <ul class="footer__container--col__lists">
-                        <li class="footer__container--col--name"><a href="mailto:104993925@student.swin.edu.au"
-                                class="footer__container--col--name--link">Tran&nbsp;Buu&nbsp;Duc&nbsp;Tri</a>
-                        </li>
-                        <li class="footer__container--col--name"><a href="malito:104992981@student.swin.edu.au"
-                                class="footer__container--col--name--link">Nguyen&nbsp;Duy&nbsp;Quang</a>
-                        </li>
-                        <li class="footer__container--col--name"><a href="mailto:104841290@student.swin.edu.au"
-                                class="footer__container--col--name--link">Le&nbsp;Hac&nbsp;Du</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__container--col footer__container--col--2">
-                    <h4 class="footer__container--col--title">Follow Us</h4>
-                    <div class="footer__container--col--social_link">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> -->
     <?php
     require_once "footer.inc";
     ?>
