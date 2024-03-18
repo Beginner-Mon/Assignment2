@@ -20,7 +20,7 @@
 
     <div class="form">
 
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="GET">
+        <form action="processEOI.php" method="GET">
             <h1 class="form__title">Application Form</h1>
             <p class = "form-hyperlink" ><a class="form__hyperlink" href="login.php">Already has an account</a></p>
             <fieldset class="form--reference">
