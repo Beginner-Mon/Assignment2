@@ -24,7 +24,7 @@
             <div class="job__container-1__title">
                 <h1>Be a part of this community</h1>
                 <p>Join us and be part of something extraordinary</p>
-                <a href="#a_jobs" class="available_button">Check out available jobs</a>
+                <a href="#a_jobs" class="available_button">Available jobs</a>
             </div>
             <div class="job__container-1__figure">
                 <!-- <figure class="img_career">
