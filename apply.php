@@ -37,7 +37,7 @@
                         <label for="fname" class="form-label">First Name</label>
                     </div>
                     <div class="form-field">
-                        <input type="text" name="first-name" id="lname" class="form-input" placeholder=" " pattern="^[a-zA-Z\s]{1,20}$" maxlength="20" title="Alphebetical characters only and maximum 20 characters" required>
+                        <input type="text" name="last-name" id="lname" class="form-input" placeholder=" " pattern="^[a-zA-Z\s]{1,20}$" maxlength="20" title="Alphebetical characters only and maximum 20 characters" required>
                         <label for="lname" class="form-label">Last Name</label>
                     </div>
                     <div class="form-field">
