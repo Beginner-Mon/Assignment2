@@ -20,7 +20,7 @@
 
     <div class="form">
 
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="get">
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="GET">
             <h1 class="form__title">Application Form</h1>
             <p class = "form-hyperlink" ><a class="form__hyperlink" href="login.php">Already has an account</a></p>
             <fieldset class="form--reference">
@@ -48,12 +48,12 @@
                         <div class="form__radio">
                             <div>
                                 <label for="male" class="gender-checkbox">Male</label>
-                                <input type="radio" name="gender" id="male">
+                                <input type="radio" name="gender" id="male" value = 1>
                             </div>
 
                             <div class="form__radio--female">
                                 <label for="female" class="gender-checkbox">Female</label>
-                                <input type="radio" name="gender" id="female">
+                                <input type="radio" name="gender" id="female" value = 2>
                             </div>
                         </div>
                     </fieldset>
@@ -74,7 +74,7 @@
                         <label for="streetAdress" class="form-label">Address</label>
                     </div>
                     <div class="form-field">
-                        <input class="form-input" id="town" type="text" name="suburb" placeholder=" " pattern="^[a-zA-Z0-9\s\-/]{1,40}$" maxlength="40" title="Maximum of 40 characters" required>
+                        <input class="form-input" id="town" type="text" name="town" placeholder=" " pattern="^[a-zA-Z0-9\s\-/]{1,40}$" maxlength="40" title="Maximum of 40 characters" required>
                         <label for="town" class="form-label">Suburb/Town</label>
                     </div>
                     <div class="form-field">
