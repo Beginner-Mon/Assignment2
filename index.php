@@ -17,6 +17,8 @@
     <section class="index-container">
 
         <?php
+        session_start();
+        $_SESSION['session_id'] = 1;
         $toolid = 1;
         require_once "header.php";
         ?>
