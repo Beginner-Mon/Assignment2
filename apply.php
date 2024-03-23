@@ -22,7 +22,7 @@
 
         <form action="processEOI.php" method="GET">
             <h1 class="form__title">Application Form</h1>
-            <p class = "form-hyperlink" ><a class="form__hyperlink" href="login.php">Already has an account</a></p>
+
             <fieldset class="form--reference">
                 <legend class="form-legend"> Your Roles</legend>
                 <input class="form-input" type="text" name="reference__number" id="re-num" placeholder="Reference Number" pattern="^[a-zA-Z0-9]{5}$" title="Please enter the exact 5 characters ID" required>
@@ -101,19 +101,19 @@
                 <h3 class="skill-title">Skills that you have</h3>
                 <div class="input-checkbox">
                     <div class="input-checkbox__skill">
-                        <input class="checkbox" type="checkbox" id="skill-1" name="soft skill" value="soft-skill">
+                        <input class="checkbox" type="checkbox" id="skill-1" name="skill-1" value="'soft-skill'">
                         <label class="checkbox-label" for="skill-1"> Soft Skill</label>
                     </div>
                     <div class="input-checkbox__skill">
-                        <input class="checkbox" type="checkbox" id="skill-2" name="problem solving" value="problem-solving">
+                        <input class="checkbox" type="checkbox" id="skill-2" name="skill-2" value="'problem-solving'">
                         <label class="checkbox-label" for="skill-2"> Problem Solving</label>
                     </div>
                     <div class="input-checkbox__skill">
-                        <input class="checkbox" type="checkbox" id="skill-3" name="web development" value="web-development">
+                        <input class="checkbox" type="checkbox" id="skill-3" name="skill-3" value="'web-development'">
                         <label class="checkbox-label" for="skill-3"> Web Development</label>
                     </div>
                     <div class="input-checkbox__skill">
-                        <input class="checkbox" type="checkbox" id="skill-4" name="communication skills" value="communication-skills">
+                        <input class="checkbox" type="checkbox" id="skill-4" name="skill-4" value="'communication-skills'">
                         <label class="checkbox-label" for="skill-4"> Communication Skills</label>
                     </div>
                 </div>

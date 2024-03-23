@@ -17,7 +17,7 @@
     $pattern_postcode = '/^\D*(\d\D*){4}$/';
     $pattern_otherskill = '/^[A-Za-z]{1,40}$/';
     function sanitize_input($a, $pattern = '/^.{1,40}$/') {
-        if (isset($a)  && preg_match($pattern, $a)) {
+        if (isset($a)  && preg_match($pattern, trim($a))) {
         $a = htmlspecialchars($a);
         $a = trim($a);
         
@@ -41,26 +41,64 @@
     $street = sanitize_input($_GET['SA'],$pattern_address);
     $town = sanitize_input($_GET['town'], $pattern_address);
     $postcode = sanitize_input($_GET['postcode'], $pattern_postcode);
-    $other_skill = sanitize_input($_GET['other_skill'], $pattern_otherskill);
+    
+    if (isset($_GET['other_skill'])) {
+        $other_skill = $_GET['other_skill'];
+    }
+    $skills = array();
+    for ($i = 1; $i <= 4; ++$i) {
+        if(isset($_GET["skill-$i"])){
+            array_push($skills, $_GET["skill-$i"]);
+        }
+    }
 
-    echo ""
+    $nums = count($skills);
+
+    function number_of_skills($num){ 
+        $s = "";
+        for ($i = 1; $i <= $num; ++$i ){
+            $s .= "Skill_$i,";
+        }
+        return $s ;
+    }
     if(!$conn) {
         echo "<p>Database Connection failure</p>";
     }
     else {
         $sql_table = "Applicant";
-        $query = "INSERT INTO $sql_table(Fname, Lname, Gender, Phone, Email, DoB, ) VALUES ('$fname', '$lname',$gender, $phone, $email,'$date');
-                  INSERT INTO Address(Address, Suburb, State, Postcode) VALUES ('$street', '$town', '$state', '$postcode'); 
+        $query = "INSERT INTO $sql_table(Fname, Lname, Gender, Phone, Email, DoB, Job_ID) VALUES ('$fname', '$lname','$gender', $phone, '$email','$date',800001);";
         
         
-        ";
         $result = mysqli_query($conn, $query);
+        if (!$result){
+            echo "<p>some thing is wrong $query</p>";
+        }
+
+        
+        if ( isset($result) && is_resource($result) ) { mysqli_free_result($result); }
+        $applicant_id = mysqli_insert_id($conn);
+        $query = "INSERT INTO Address(EOI, Address, Suburb, State, Postcode) VALUES($applicant_id, '$street', '$town', '$state', $postcode); ";
+        $result = mysqli_query($conn, $query);
+        if (!$result){
+            echo "<p>some thing is wrong $query</p>";
+        }
+        if ( isset($result) && is_resource($result) ) { mysqli_free_result($result); }
+        $query = "INSERT INTO Skills( " . number_of_skills($nums) . " Other_skill, EOI) VALUES( " . join(",", $skills) . ", '$other_skill',$applicant_id)";
+        $result = mysqli_query($conn, $query);
+
+
+        
+
+        
+        
+        
         if(!$result){
             echo "<p class = 'wrong'> Something is wrong with ", $query , "</p>";
 
         }    else {
-            echo "<p class ='ok'>Successfully added new car record</p>";
-            mysqli_free_result($result);
+            
+            if ( isset($result) && is_resource($result) ) { mysqli_free_result($result); }
+            require "success.php";
         }
         mysqli_close($conn);
     }
