@@ -48,12 +48,12 @@
                         <div class="form__radio">
                             <div>
                                 <label for="male" class="gender-checkbox">Male</label>
-                                <input type="radio" name="gender" id="male" value = 1>
+                                <input type="radio" name="gender" id="male" value = 'M'>
                             </div>
 
                             <div class="form__radio--female">
                                 <label for="female" class="gender-checkbox">Female</label>
-                                <input type="radio" name="gender" id="female" value = 2>
+                                <input type="radio" name="gender" id="female" value = 'F'>
                             </div>
                         </div>
                     </fieldset>

@@ -42,15 +42,18 @@
     $town = sanitize_input($_GET['town'], $pattern_address);
     $postcode = sanitize_input($_GET['postcode'], $pattern_postcode);
     $other_skill = sanitize_input($_GET['other_skill'], $pattern_otherskill);
-    if ($gender ==1) {
-        $gender = True;
-    }
+
+    echo ""
     if(!$conn) {
         echo "<p>Database Connection failure</p>";
     }
     else {
-        $sql_table = "Personal_Details";
-        $query = "INSERT INTO $sql_table(First_name, Last_name, Phone, date_of_birth, Male) VALUES ('$fname', '$lname', $phone, '$date', $gender)";
+        $sql_table = "Applicant";
+        $query = "INSERT INTO $sql_table(Fname, Lname, Gender, Phone, Email, DoB, ) VALUES ('$fname', '$lname',$gender, $phone, $email,'$date');
+                  INSERT INTO Address(Address, Suburb, State, Postcode) VALUES ('$street', '$town', '$state', '$postcode'); 
+        
+        
+        ";
         $result = mysqli_query($conn, $query);
         if(!$result){
             echo "<p class = 'wrong'> Something is wrong with ", $query , "</p>";
