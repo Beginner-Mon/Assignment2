@@ -15,6 +15,27 @@
 <body class="apply__body">
     <?php
 
+    require_once("settings.php");
+    $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+    if (!$conn){
+        echo "<p>Connection Failure</p>";
+
+    }
+    else {
+        $query = "SELECT Job_ref FROM Job_description";
+        $result = mysqli_query($conn, $query);
+ 
+        $pattern = "^";
+        $jobs = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            array_push($jobs, $row['Job_ref']);
+        }
+        $pattern = "^(" . join("|",$jobs) . ")$";
+
+        mysqli_free_result($result);
+        mysqli_close($conn);
+    }
+
     require_once "header.php";
     ?>
 
@@ -25,10 +46,10 @@
 
             <fieldset class="form--reference">
                 <legend class="form-legend"> Your Roles</legend>
-                <input class="form-input" type="text" name="reference__number" id="re-num" placeholder="Reference Number" pattern="^[a-zA-Z0-9]{5}$" title="Please enter the exact 5 characters ID" required>
+                <input class="form-input" type="text" name="reference__number" id="re-num" placeholder="Reference Number"pattern = "<?php echo $pattern; ?>" title="ids need to be available" required>
             </fieldset>
 
-            <?php require_once "loginForm.php" ?>
+         
             <div class="form-1">
                 <fieldset class="form-personal">
                     <legend class="form-legend">Personal details</legend>
