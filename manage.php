@@ -19,14 +19,19 @@
 ?>
 
     <h1 class="manage-title">Applicant tables</h1>
-    <form action="" method = "get"> 
+    <form action="" method = "post"> 
 
-        <input type="submit" name ="logout" class = "manage_btn"> 
+        <input type="submit" name ="logout" class = "manage_btn" value = "Log out"> 
     </form>
 
     <?php 
-        if(isset($_GET['logout'])){
-            echo "got button";
+        if(isset($_POST['logout'])){
+
+            session_unset();
+            session_regenerate_id(true);
+            session_destroy();
+
+            header("location: login.php");
         }
     
     ?>
