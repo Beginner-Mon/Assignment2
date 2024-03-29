@@ -41,7 +41,7 @@
 
     <div class="form">
 
-        <form action="processEOI.php" method="GET">
+        <form action="processEOI.php" method="POST">
             <h1 class="form__title">Application Form</h1>
 
             <fieldset class="form--reference">

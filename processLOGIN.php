@@ -17,9 +17,9 @@
                 exit();
             } 
             }
-            $username = $_GET['username'];
+            $username = $_POST['username'];
 
-            $pass = $_GET['password'];
+            $pass = $_POST['password'];
 
             //prevent from sql injection
             $username = stripslashes($username); 

@@ -19,13 +19,13 @@
 ?>
 
     <h1 class="manage-title">Applicant tables</h1>
-    <form action="" method = "get"> 
+    <form action="" method = "POST"> 
 
         <input type="submit" name ="logout" class = "manage_btn"> 
     </form>
 
     <?php 
-        if(isset($_GET['logout'])){
+        if(isset($_POST['logout'])){
             echo "got button";
         }
     
