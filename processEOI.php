@@ -32,22 +32,22 @@
     
     }
     // getting input from apply.php
-    $job_ref = sanitize_input($_GET['reference__number']);
-    $username = sanitize_input($_GET['username']);
-    $password = sanitize_input($_GET['password']);
-    $fname = sanitize_input($_GET['first-name'], $pattern_name);
-    $lname = sanitize_input($_GET['last-name'], $pattern_name);
-    $date = sanitize_input($_GET['date']);
-    $gender = sanitize_input($_GET['gender']);
-    $state = sanitize_input($_GET['state']);
-    $email = sanitize_input($_GET['email'], $pattern_email);
-    $phone = sanitize_input($_GET['phone'], $pattern_phone);
-    $street = sanitize_input($_GET['SA'],$pattern_address);
-    $town = sanitize_input($_GET['town'], $pattern_address);
-    $postcode = sanitize_input($_GET['postcode'], $pattern_postcode);
+    $job_ref = sanitize_input($_POST['reference__number']);
+    $username = sanitize_input($_POST['username']);
+    $password = sanitize_input($_POST['password']);
+    $fname = sanitize_input($_POST['first-name'], $pattern_name);
+    $lname = sanitize_input($_POST['last-name'], $pattern_name);
+    $date = sanitize_input($_POST['date']);
+    $gender = sanitize_input($_POST['gender']);
+    $state = sanitize_input($_POST['state']);
+    $email = sanitize_input($_POST['email'], $pattern_email);
+    $phone = sanitize_input($_POST['phone'], $pattern_phone);
+    $street = sanitize_input($_POST['SA'],$pattern_address);
+    $town = sanitize_input($_POST['town'], $pattern_address);
+    $postcode = sanitize_input($_POST['postcode'], $pattern_postcode);
     
-    if (isset($_GET['other_skill']) && trim($_GET['other_skill']) != "") {
-        $other_skill = $_GET['other_skill'];
+    if (isset($_POST['other_skill']) && trim($_POST['other_skill']) != "") {
+        $other_skill = $_POST['other_skill'];
     }
 
     function check_job_ref($ref){
@@ -74,8 +74,8 @@
     //apppeding the skill from apply.php checkbox
     $skills = array();
     for ($i = 1; $i <= 4; ++$i) {
-        if(isset($_GET["skill-$i"])){
-            array_push($skills, $_GET["skill-$i"]);
+        if(isset($_POST["skill-$i"])){
+            array_push($skills, $_POST["skill-$i"]);
         }
     }
 
