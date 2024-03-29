@@ -39,6 +39,11 @@
                 if (mysqli_num_rows($result) > 0) {
                     usleep(1000);
                     echo 'found!';
+                    //CREATE SESSION ID
+                    session_start();
+                    $_SESSION['SSID'] = session_id();
+
+
                     if ( isset($result) && is_resource($result) ) { mysqli_free_result($result); }
                     header("location: manage.php");
                 } else {
