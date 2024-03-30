@@ -33,8 +33,7 @@
     }
     // getting input from apply.php
     $job_ref = sanitize_input($_POST['reference__number']);
-    $username = sanitize_input($_POST['username']);
-    $password = sanitize_input($_POST['password']);
+
     $fname = sanitize_input($_POST['first-name'], $pattern_name);
     $lname = sanitize_input($_POST['last-name'], $pattern_name);
     $date = sanitize_input($_POST['date']);

@@ -15,7 +15,7 @@
         require_once "header.php";
     ?>
     <div class="form login--form">
-    <form action="processLOGIN.php" method  = "POST">
+    <form action="processLOGIN.php" method  = "post">
     <h1 class="form__title">Login as Admin</h1>
     <div class="form-1">
                 <fieldset class="form-personal">

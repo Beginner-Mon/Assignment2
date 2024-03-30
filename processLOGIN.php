@@ -17,9 +17,9 @@
                 exit();
             } 
             }
-            $username = $_POST['username'];
+            $username = sanitize_input($_POST['username']);
 
-            $pass = $_POST['password'];
+            $pass = sanitize_input($_POST['password']);
 
             //prevent from sql injection
             $username = stripslashes($username); 
