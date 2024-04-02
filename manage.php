@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href ="style/style.css">
     <link rel="stylesheet" href="style/manage.css">
     <title>Managament</title>
 </head>
@@ -29,7 +29,7 @@
     align-items: center;
 }
 
-.manage_btn {
+.manage-btn {
     margin: auto;
     background: none;
     text-transform: capitalize;
@@ -68,35 +68,17 @@
 
 <body class='manage_body_container'>
     <?php 
-
+    require_once("settings.php");
     session_start(); 
     if (!isset($_SESSION['SSID'])){
         header("location: login.php");
     }
 
             
+
     // Set the inactivity time of 15 minutes (900 seconds)
     $inactivity_time = 15 * 60;
 
-
-    if (!isset($_SESSION['last_regeneration'])){
-        session_regenerate_id(true);
-        $_SESSION['last_regeneration'] = time();
-    } else {
-        $interval =  60 * 30;
-        if (time() - $_SESSION['last_regeneration'] >= $interval){
-            session_regenerate_id(true);
-            $_SESSION['last_regeneration'] = time();
-        }
-    }
-
-    // Set the inactivity time of 15 minutes (900 seconds)
-    $inactivity_time = 1 * 60;
-
-
-    // Check if the last_timestamp is set
-    // and last_timestamp is greater then 15 minutes or 9000 seconds
-    // then unset $_SESSION variable & destroy session data
     if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp']) > $inactivity_time) {
         session_unset();
         session_destroy();
@@ -114,7 +96,7 @@
     }
 
     function get_username() {
-        require_once("settings.php");
+        require("settings.php");
       
         $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
         if (!$conn) {
@@ -128,8 +110,7 @@
         $row = mysqli_fetch_assoc($result);
         $username = "";
         
-        
-            $username = $row['username'];
+        $username = $row['username'];
 
         mysqli_free_result($result);
         mysqli_close($conn);
@@ -139,14 +120,20 @@
     <header class = "manage__header">
         <h1 class="manage-title"><?php echo get_username(); ?></h1>
         <form action="" method = "post" class = "manage_form"> 
-        <input type="submit" name ="logout" class = "manage_btn" value = "Log out"> 
+        <input type="submit" name ="logout" class = "manage-btn" value = "Log out"> 
         </form>
     </header>
+    <?php 
+    if(isset($_POST['logout'])){
+        session_unset();
+        session_regenerate_id(true);
+        session_destroy();
+        header("location: login.php");
+    }
+    ?>
     <h1 class="manage-content">Applicant tables</h1>
+    
 <?php
-
-    require_once 'settings.php';
-
     // Attempt to establish database connection
     $con = mysqli_connect($host, $user, $pwd, $sql_db);
 
@@ -156,12 +143,12 @@
     }
     $query = "SELECT * FROM Applicant WHERE 1";
 
-
     // Execute the query
     $result = mysqli_query($con, $query);
     
 
     ?>
+
     <div class="active_menu">
         <div class='left_panel_manage'>
             <div class="filter_menu" id="filter_menu">
@@ -184,9 +171,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <form action="" method="post"> 
-          <input type="submit" name="logout" class="manage_btn" id="caution_btn_logout" value="Log out"> 
-      </form> 
+               
             </div>
         </div>
 
@@ -210,7 +195,7 @@
             <div class='update_menu'>
                 <form action="update.php" method="post" onsubmit="return confirm('Are you sure you want to update?');">
                 <fieldset class='manage_fieldset_config'>
-                <legend>UPDATE STATUS</legend>
+                <legend class = "manage_lengend">UPDATE STATUS</legend>
                 <p class="row">	<label for="update_id_number">ID: </label>
                 <input type="text" name="update_id_number" id="update_id_number"/></p> 
                 <label for="update_status">Status: </label>
@@ -279,19 +264,6 @@
             </div>
         </div>
     </div>
-
-
-    
-
-    <?php 
-    if(isset($_POST['logout'])){
-        session_unset();
-        session_regenerate_id(true);
-        session_destroy();
-        header("location: login.php");
-    }
-    ?>
-
 </body>
 
 </html>

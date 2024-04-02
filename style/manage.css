@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .manage__header {
     background-color: black;
     padding: 20px 0;
@@ -23,14 +18,4 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.manage_btn {
-    margin: auto;
-    background: none;
-    text-transform: capitalize;
-    font-size: 1.1em;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
 }

@@ -2157,7 +2157,7 @@ fieldset {
 
 }
 
-legend {
+.form-legend {
     color: var(--main-color);
     margin-left: 35px;
     padding: 0 3px;
@@ -2621,6 +2621,7 @@ code {
         left: 80px;
     }
 }
+
 /*****************************************************************************************************
 *************************************DESIGN MANAGE.HTML************************************************
 ******************************************************************************************************
@@ -2635,35 +2636,39 @@ code {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Container for filter menu, delete menu, and logout button */
-  .active_menu {
+}
+
+/* Container for filter menu, delete menu, and logout button */
+.active_menu {
     display: flex;
     background-color: #003459;
     padding: 20px;
     color: white;
-  }
-  
-  .right_panel_manage, .left_panel_manage{
+}
+
+.right_panel_manage,
+.left_panel_manage {
     flex: 1;
-  }
-  
-  .delete_menu {
-    flex:1;
-  }
-  .filter_menu {
+}
+
+.delete_menu {
+    flex: 1;
+}
+
+.filter_menu {
     flex: 1;
     margin-right: 20px;
-  }
-  .caution_btn{
+}
+
+.caution_btn {
     align-items: center;
     background-color: red;
     color: white;
     border: none;
     border-radius: 10px;
-  }
-  #caution_btn_logout{
+}
+
+#caution_btn_logout {
     background-color: red;
     color: white;
     width: 30%;
@@ -2673,57 +2678,52 @@ code {
     cursor: pointer;
     text-align: center;
     margin-top: 10px;
-  }
-  
-  
-  /* Fieldset styling */
-  .manage_fieldset_config {
-    border: 2px solid white; /* Completed border */
+}
+
+
+/* Fieldset styling */
+.manage_fieldset_config {
+    border: 2px solid white;
+    /* Completed border */
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-  }
-  
-  legend {
+}
+
+.manage_legend {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
-  }
-  
-  
-  /* Form styling */
-  form {
+    color: black;
+}
+
+
+/* Form styling */
+form {
     width: 100%;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  select {
+}
+
+input[type="text"],
+select {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .filter_button_align{
+}
+
+.filter_button_align {
     display: flex;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  .update_btn_id{
-    flex:1;
-    background-color:  #4CAF50;
+}
+
+.update_btn_id {
+    flex: 1;
+    background-color: #4CAF50;
     color: white;
     width: 160px;
     height: 45px;
@@ -2732,17 +2732,18 @@ code {
     cursor: pointer;
     text-align: center;
     margin-right: 10px;
-   
-  }
-  .update_btn_id:hover{
+
+}
+
+.update_btn_id:hover {
     background-color: #45a049;
-  }
-  
-  .logout_btn{
+}
+
+.logout_btn {
     flex: 1;
-  }
-  
-  #caution_btn{
+}
+
+#caution_btn {
     background-color: red;
     color: white;
     width: 30%;
@@ -2751,51 +2752,54 @@ code {
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-   
-  }
-  #caution_btn:hover{
+
+}
+
+#caution_btn:hover {
     background-color: crimson;
-  }
-  
-  
-  .manage_btn {
+}
+
+
+.manage_btn {
     background-color: #4CAF50;
-    color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     margin-right: 20px;
-  }
-  
-  .manage_btn:hover {
+}
+
+.manage_btn:hover {
     background-color: #45a049;
-  }
-  
-  /* Table styling */
-  .table {
+}
+
+/* Table styling */
+.table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  .table th, .table td {
+}
+
+.table th,
+.table td {
     padding: 10px;
     border: 1px solid #ddd;
-  }
-  
-  .table th {
+}
+
+.table th {
     background-color: #003459;
     color: white;
-  }
-  
-  /* Card styling */
-  .card {
+}
+
+/* Card styling */
+.card {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  .display-6 {
-    font:bold;
+}
+
+.display-6 {
+    font: bold;
     margin-top: 3%;
     text-align: center;
     margin-bottom: 3%;
-  }
+}
