@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.manage__header {
+    background-color: black;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.manage-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.manage_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage_btn {
+    margin: auto;
+    background: none;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}

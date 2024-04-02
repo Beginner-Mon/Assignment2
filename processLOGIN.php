@@ -43,10 +43,21 @@
                     //CREATE SESSION ID
                     session_start();
                     $_SESSION['SSID'] = session_id();
-
-
-                    if ( isset($result) && is_resource($result) ) { mysqli_free_result($result); }
+                    
+                    $query = "UPDATE Admin  SET token = '". session_id()."' WHERE username = '$username' AND password = '$pass';";
+                    $result = mysqli_query($conn, $query);
+                    if (!$result) {
+                        echo mysqli_error($conn);
+                        exit();
+                    } else {
+                        if ( isset($result) && is_resource($result) ) { mysqli_free_result($result); }
+                        mysqli_close($conn);
                     header("location: manage.php");
+                    }
+
+
+
+                    
                 } else {
                     usleep(1000);
                     echo 'not found';
