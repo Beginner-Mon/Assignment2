@@ -14,7 +14,8 @@ if (empty($filter_value_Fname) && empty($filter_value_Lname) && empty($filter_va
     exit; // Stop further execution
 }
 
-$query = "SELECT * FROM Applicant WHERE 1";
+$query = "SELECT  fname, lname, Gender, DoB, Phone,Email, Skill_1,Skill_2,Skill_3,Skill_4, Other_Skill, Status FROM Applicant
+INNER JOIN Skills on Applicant.EOI = Skills.EOI WHERE 1";
 
 if (!empty($filter_value_ID)) {
     $query .= " AND Job_ID = '$filter_value_ID'";
@@ -35,27 +36,36 @@ if (!$result) {
 } else {
     echo "<table border=\"1\">";
     echo "<tr>"
-        . "<th scope=\"col\">EOI</th>"
+        
         . "<th scope=\"col\">First Name</th>"
         . "<th scope=\"col\">Last Name</th>"
         . "<th scope=\"col\">Gender</th>"
-        . "<th scope=\"col\">Job ID</th>"
+        . "<th scope=\"col\">DoB</th>"
         . "<th scope=\"col\">Phone</th>"
         . "<th scope=\"col\">Email</th>"
-        . "<th scope=\"col\">DoB</th>"
+        . "<th scope=\"col\">Skill_1</th>"
+        . "<th scope=\"col\">Skill_2</th>"
+        . "<th scope=\"col\">Skill_3</th>"
+        . "<th scope=\"col\">Skill_4</th>"
+        . "<th scope=\"col\">OTher Skill</th>"
         . "<th scope=\"col\">Status</th>"
         . "</tr>";
 
     while ($item = mysqli_fetch_assoc($result)) {
         echo "<tr>";
-        echo "<td>", $item["EOI"], "</td>";
+        
         echo "<td>", $item["fname"], "</td>";
         echo "<td>", $item["lname"], "</td>";
         echo "<td>", $item["Gender"], "</td>";
-        echo "<td>", $item["Job_ID"], "</td>";
+        echo "<td>", $item["DoB"], "</td>";
+        
         echo "<td>", $item["Phone"], "</td>";
         echo "<td>", $item["Email"], "</td>";
-        echo "<td>", $item["DoB"], "</td>";
+        echo "<td>", $item["Skill_1"], "</td>";
+        echo "<td>", $item["Skill_2"], "</td>";
+        echo "<td>", $item["Skill_3"], "</td>";
+        echo "<td>", $item["Skill_4"], "</td>";
+        echo "<td>", $item["Other_Skill"], "</td>";
         echo "<td>", $item["Status"], "</td>";
         echo "</tr>";
     }

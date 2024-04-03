@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.enhance2__header {
+    padding: 10px;
+}
+
+.enhance2__header-title {
+    font-size: 3em;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+.enhance2__header-span {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+.enhance2__container {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.enhance2__container__title {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.enhance2__container__content {
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+.enhance2__container__code {
+    margin: 10px 0;
+    padding: 3px;
+    background-color: black;
+    color: green;
+    width: 60%;
+    overflow: scroll;
+}

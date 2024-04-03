@@ -155,9 +155,9 @@
                 <form action="filter.php" method='GET' target="_blank">
                     <fieldset class='manage_fieldset_config'><legend>FILTER</legend>
                         <p class="row">	<label for="filter_Fname">First Name: </label>
-                        <input type="text" name="filter_Fname" id="filter_Fname" /></p>
+                        <input class = "manage_input" type="text" name="filter_Fname" id="filter_Fname" /></p>
                         <p class="row">	<label for="filter_Lname">Last Name: </label>
-                        <input type="text" name="filter_Lname" id="filter_Lname" /></p>
+                        <input class = "manage_input" type="text" name="filter_Lname" id="filter_Lname" /></p>
                         <label for="jobs_filter">Job ID: </label>
                         <select name="jobs_filter" id="jobs_filter">
                         <option value=""></option>
@@ -197,7 +197,7 @@
                 <fieldset class='manage_fieldset_config'>
                 <legend class = "manage_lengend">UPDATE STATUS</legend>
                 <p class="row">	<label for="update_id_number">ID: </label>
-                <input type="text" name="update_id_number" id="update_id_number"/></p> 
+                <input class = "manage_input" type="text" name="update_id_number" id="update_id_number"/></p> 
                 <label for="update_status">Status: </label>
                         <select name="update_status" id="update_status">
                         <option value="New">New</option>
@@ -258,7 +258,65 @@
                                 echo "<tr><td colspan='9'>No data found.</td></tr>";
                             }
                             ?>
+
                         </table>
+
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h2 class="display-6 text-center">Job list</h2>
+                    </div>
+                    <?php 
+                    
+                        $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+                        $query = "SELECT * FROM Skills WHERE 1";
+                        
+                        if (!$conn) {
+                            echo "<p>Connection Failed</p>";
+                            exit();
+                        }
+                        $result = mysqli_query($conn, $query);
+
+                    ?>
+                    <div class="card-body">
+                        <table class="table table-bordered text-center">
+                            <tr class="bg-dark text-white">
+                                <td>skills_id</td>
+                                <td>EOI</td>
+                                <td>Skill 1</td>
+                                <td>Skill 2</td>
+                                <td>Skill 3</td>
+                                <td>Skill 4</td>
+                                <td>Other Skill</td>
+                            </tr>
+                            <?php 
+                            // Check if $result is not null
+                            if ($result) {
+                                // Fetch and display data
+                                while($item = mysqli_fetch_assoc($result)) {
+                            ?>
+                                <tr>
+                                    <td><?php echo $item['skills_id']; ?></td>
+                                    <td><?php echo $item['EOI']; ?></td>
+                                    <td><?php echo $item['Skill_1']; ?></td>
+                                    <td><?php echo $item['Skill_2']; ?></td>
+                                    <td><?php echo $item['Skill_3']; ?></td>
+                                    <td><?php echo $item['Skill_4']; ?></td>
+                                    <td><?php echo $item['Other_skill']; ?></td>
+                                </tr>
+                            <?php
+                                }
+                                // Free result set
+                                mysqli_free_result($result);
+                            } else {
+                                // Display error message if $result is null
+                                echo "<tr><td colspan='9'>No data found.</td></tr>";
+                            }
+                            ?>
+
+                        </table>
+
                     </div>
                 </div>
             </div>

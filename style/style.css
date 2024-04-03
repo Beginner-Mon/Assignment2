@@ -2157,7 +2157,7 @@ fieldset {
 
 }
 
-.form-legend {
+legend {
     color: var(--main-color);
     margin-left: 35px;
     padding: 0 3px;
@@ -2699,16 +2699,16 @@ code {
 
 
 /* Form styling */
-form {
+/* form {
     width: 100%;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-}
+} */
 
-input[type="text"],
+.manage_input,
 select {
     width: 90%;
     padding: 10px;
