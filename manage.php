@@ -74,9 +74,9 @@
     <body class='manage_body_container'>
         <?php
         require_once ("settings.php");
-        $username = get_username();
+
         session_start();
-        if (!isset($_SESSION['SSID']) && $username == $_SESSION['SSID']) {
+        if (!isset($_SESSION['SSID']) || get_token() != $_SESSION['SSID']) {
             header("location: login.php");
         }
 
@@ -101,7 +101,33 @@
             $_SESSION['last_timestamp'] = time();
 
         }
+        function get_token()
+        {
+            require ("settings.php");
 
+            $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+            if (!$conn) {
+                echo "<p>Connection Failed </p>";
+                exit();
+            }
+
+            $query = "SELECT token FROM Admin WHERE token = '" . $_SESSION['SSID'] . "' ";
+
+            $result = mysqli_query($conn, $query);
+            if (mysqli_num_rows($result) > 0) {
+                $row = mysqli_fetch_assoc($result);
+
+                $token = "";
+
+                $token = $row['token'];
+
+                mysqli_free_result($result);
+                mysqli_close($conn);
+                return $token;
+            } else {
+                header('location: login.php');
+            }
+        }
         function get_username()
         {
             require ("settings.php");
@@ -142,6 +168,7 @@
             session_destroy();
             header("location: login.php");
         }
+        echo $_SESSION['SSID'];
         ?>
         <h1 class="manage-content">Applicant tables</h1>
 

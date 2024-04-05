@@ -44,9 +44,9 @@
             <h1 class="form__title">Application Form</h1>
 
             <fieldset class="form--reference">
-                <legend class="form-legend"> Your Roles</legend>
+                <legend class="form-legend"> Your Position</legend>
                 <input class="form-input" type="text" name="reference__number" id="re-num"
-                    placeholder="Reference Number" pattern="<?php echo $pattern; ?>" title="ids need to be available"
+                    placeholder="Job ID Number" pattern="<?php echo $pattern; ?>" title="ids need to be available"
                     required>
             </fieldset>
 
@@ -80,6 +80,11 @@
                             <div class="form__radio--female">
                                 <label for="female" class="gender-checkbox">Female</label>
                                 <input type="radio" name="gender" id="female" value='F'>
+                            </div>
+
+                            <div class="form__radio--other">
+                                <label for="other" class="gender-checkbox">Other</label>
+                                <input type="radio" name="gender" id="other" value='O'>
                             </div>
                         </div>
                     </fieldset>
