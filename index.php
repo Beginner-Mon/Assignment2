@@ -126,7 +126,7 @@
                     <h2 class="box__title">Market Update: Lapis's Latest Innovations Drive Digital Transformation.</h2>
                     <p class="box__content">From enhanced search capabilities to personalized recommendations, explore how Lapis's innovations
                         are shaping the future of online interactions. Don't miss out on the latest trends
-                        dive into the transformative power of Google's market update today.</p>
+                        dive into the transformative power of Lapis's market update today.</p>
                 </div>
             </div>
         </div>
