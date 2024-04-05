@@ -122,12 +122,12 @@
                 </p>
                 <img class="code__images" src="images/db_table.png" alt="Error 404">
                 <h1 class="enhance__container_title_1">Code explaination</h1>
-                <pre>
-                    <code class="enhance2__container__code">
+
+                <code class="enhance2__container__code">
     CREATE TABLE Skills(
     EOI FOREIGN KEY REFERENCES Applicant(EOI));
                     </code>
-                </pre>
+
 
 
                 <p class="enhance2__code__explain">Foreign key create a link between tables.<br>In this example, the EOI
