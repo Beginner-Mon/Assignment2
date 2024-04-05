@@ -19,3 +19,14 @@
     justify-content: center;
     align-items: center;
 }
+.active_menu{
+        flex-wrap: wrap;
+    }
+@media (max-width:800px) {
+	.active_menu{
+        flex-wrap: wrap;
+    }
+    .card-body {
+        overflow: scroll;
+    }
+}
