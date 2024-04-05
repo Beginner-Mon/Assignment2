@@ -21,25 +21,31 @@
             <div class="enhance2__container">
                 <h1 class="enhance2__container__title">Enhancement 1</h1>
                 <p class="enhance2__container__content">
-                    This enhancement focuses on improving overall security, adding an extra layer of firewalls to prevent from XSS, time attack and session hijacking.
+                    This enhancement focuses on improving overall security, adding an extra layer of firewalls to
+                    prevent from XSS, time attack and session hijacking.
 
                 </p>
                 <!-- add illu in here -->
                 <code class="enhance2__container__code">
-                    You hehe    
+                    //prevent XSS
+                    if (isset($a)  && preg_match($pattern, trim($a)))
+
+                    //prevent time attack
+                    usleep(1000);
+
+                    //prevent session hijacking
+                    session_regenerate_id(true);
                 </code>
             </div>
 
             <div class="enhance2__container">
                 <h1 class="enhance2__container__title">Enhancement 2</h1>
                 <p class="enhance2__container__content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et eos, distinctio, est animi nam
-                    quam molestiae veritatis velit hic optio. Dolor eius tempore suscipit officiis accusamus consequatur
-                    perferendis perspiciatis?
+                    This enhancement links the tables together through the use of foreign keys, creating a complete
+                    database with data integrity.
                 </p>
-                <!-- add illu in here -->
                 <code class="enhance2__container__code">
-                    asdasdasd
+                     EOI FOREIGN KEY REFERENCES Applicant(EOI)
                 </code>
             </div>
 
