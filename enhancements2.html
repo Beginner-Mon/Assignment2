@@ -26,17 +26,23 @@
 
                 </p>
                 <!-- add illu in here -->
-                <pre>
+                <img class="code__images" src="images/login.PNG" alt="Error 404">
+                <code>
                     <code class="enhance2__container__code">
     //prevent XSS
     if (isset($a)  && preg_match($pattern, trim($a)))
-
+                    </code>
+                    <p class="enhance2__code__explain">Preg_match checks if a patter match a specific string, which help validate input. (same function as regex)</p>
+                <code class="enhance2__container__code">
     //prevent time attack
     usleep(1000);
-
+                </code>
+                <p class="enhance2__code__explain">usleep helps by introducing a delay, which helps to control certain operations.<br>In this case, it is use to prevent time attack.</p>
+<code class="enhance2__container__code">
     //prevent session hijacking
     session_regenerate_id(true);
-                    </code>
+            </code>
+            <p class="enhance2__code__explain">session regenerate id helps prevent attackers from hijacking a session by stealing the session id.<br> By changing the id constantly, even if the attacker obtain an id, it became useless as soon as the session is regenerated.</p>
                 </pre>
             </div>
 
@@ -46,10 +52,13 @@
                     This enhancement links the tables together through the use of foreign keys, creating a complete
                     database with data integrity.
                 </p>
+                <img class="code__images" src="images/table.PNG" alt="Error 404">
                 <pre>
                     <code class="enhance2__container__code">
-    EOI FOREIGN KEY REFERENCES Applicant(EOI)
+    CREATE TABLE Skills(
+    EOI FOREIGN KEY REFERENCES Applicant(EOI));
                     </code>
+                    <p class="enhance2__code__explain">Foreign key create a link between tables. <br>In this example, the EOI in the skill table is link to the EOI in Applicant table, which ensure data integrity.</p>
                 </pre>
             </div>
 
