@@ -32,13 +32,14 @@ if (!empty($filter_value_Lname)) {
 
 $result = mysqli_query($conn, $query);
 
-if (!(mysqli_num_rows($result) > 0)){
-    echo '<a href="manage.php">Back</a>';
-    echo "<p>No data found for the given filter</p>";
-    exit;
-}elseif (!$result)  {
+
+if (!$result)  {
         echo '<a href="manage.php">Back</a>';
         echo "<p> Something is wrong with the query: ", mysqli_error($conn), "</p>";
+}elseif (!(mysqli_num_rows($result) > 0)){
+            echo '<a href="manage.php">Back</a>';
+            echo "<p>No data found for the given filter</p>";
+            exit;
 } else {
     echo "<table border=\"1\">";
     echo "<tr>"
