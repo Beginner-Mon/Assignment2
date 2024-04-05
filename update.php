@@ -21,7 +21,7 @@ else{
 
   if (empty($_POST["update_id_number"])) {
     echo '<a href="manage.php">Back</a>';
-    echo "Please enter EOI.";
+    echo "<p>Please enter EOI.</p>";
   } else {
     $update_id_number = trim($_POST["update_id_number"]);
     $update_query = "UPDATE Applicant SET Status = '$update_status' WHERE EOI = '$update_id_number'";
@@ -42,7 +42,7 @@ else{
       }
   }
   }
-
+  mysqli_close($con);
   // Validate input
   
 

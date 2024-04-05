@@ -11,7 +11,7 @@ $filter_value_ID = isset($_POST["jobs_filter"]) ? trim($_POST["jobs_filter"]) : 
 // Check if all filter values are empty
 if (empty($filter_value_Fname) && empty($filter_value_Lname) && empty($filter_value_ID)) {
     echo '<a href="manage.php">Back</a>';
-    echo "Please enter at least one filter criteria.";
+    echo "<p>Please enter at least one filter criteria.</p>";
     exit; // Stop further execution
 }
 
