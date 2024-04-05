@@ -5,74 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/manage.css">
+    <!-- <link rel="stylesheet" href="style/manage.css"> -->
     <title>Management</title>
 </head>
 
 <body>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .manage-title {
-            font-size: 2em;
-            color: #ffffff;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .manage_form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .manage-btn {
-            margin: auto;
-            background: none;
-            text-transform: capitalize;
-            font-size: 1.1em;
-            color: #ffffff;
-            border: none;
-            cursor: pointer;
-        }
-        .color{
-            color: white;
-        }
-
-        .manage-content {
-            text-align: center;
-            font-weight: 500;
-            padding: 10px;
-            letter-spacing: 1.2px;
-            font-size: 3em;
-        }
-
-        @media (max-width: 578px) {
-            .manage-content {
-                font-size: 2em;
-            }
-
-            .manage-title {
-                font-size: 1.1em;
-            }
-
-            .manage__header {
-                flex-wrap: wrap;
-                gap: 10px;
-                padding: 10x 0;
-                align-items: center;
-            }
-        }
-    </style>
-
-
-    <link rel="stylesheet" href="style/style.css">
-    <title>Management</title>
-    </head>
 
     <body class='manage_body_container'>
         <?php

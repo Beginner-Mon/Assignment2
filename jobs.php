@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <?php require_once "head.inc" ?>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title>Jobs</title>
 </head>
@@ -64,7 +62,12 @@
     <section class="third_window">
         <div class="third_window_aside">
             <h1>Come build the future with us.</h1>
-            <p>At Lapis, we believe in shaping tomorrow's world through innovation, collaboration, and a relentless pursuit of excellence. We're not just offering jobs; we're inviting you to join a community of forward-thinkers and change-makers who are passionate about making a difference. Here, you'll have the opportunity to unleash your creativity, challenge the status quo, and contribute to groundbreaking projects that have the potential to transform industries and improve lives. Together, let's build a future where possibilities are limitless and dreams become reality.</p>
+            <p>At Lapis, we believe in shaping tomorrow's world through innovation, collaboration, and a relentless
+                pursuit of excellence. We're not just offering jobs; we're inviting you to join a community of
+                forward-thinkers and change-makers who are passionate about making a difference. Here, you'll have the
+                opportunity to unleash your creativity, challenge the status quo, and contribute to groundbreaking
+                projects that have the potential to transform industries and improve lives. Together, let's build a
+                future where possibilities are limitless and dreams become reality.</p>
         </div>
     </section>
 
@@ -78,7 +81,8 @@
             </div>
             <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Melbourne, VIC, AUS</strong></p><br>
             <div class="job_detail_aside">
-                <p>AI is growing stronger and faster than ever. Are you passionate about shaping the future with Artificial Intelligence? Join our dynamic team at Lapis as an AI Engineer!</p>
+                <p>AI is growing stronger and faster than ever. Are you passionate about shaping the future with
+                    Artificial Intelligence? Join our dynamic team at Lapis as an AI Engineer!</p>
                 <aside>
                     <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
                 </aside>
@@ -87,39 +91,50 @@
                 <hr>
                 <p class="salary"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;10000-12000 USD</p>
                 <h2>DESCRIPTION</h2>
-                <p>Lapis is looking for an AI engineer to join our research and development team. The AI engineer will work on cutting-edge AI projects, including machine learning, natural language processing, computer vision, and robotics.</p>
+                <p>Lapis is looking for an AI engineer to join our research and development team. The AI engineer will
+                    work on cutting-edge AI projects, including machine learning, natural language processing, computer
+                    vision, and robotics.</p>
                 <h2>Responsibilities</h2>
                 <ol>
                     <li>Develop and deploy cutting-edge machine learning models and AI algorithms.</li>
-                    <li>Collaborate closely with our research and development team to design effective solutions for complex technical challenges.</li>
+                    <li>Collaborate closely with our research and development team to design effective solutions for
+                        complex technical challenges.</li>
                     <li>Train and optimize machine learning models for real-world applications.</li>
                     <li>Ensure the seamless deployment of AI models into production environments.</li>
                 </ol>
                 <h2>BASIC QUALIFICATIONS</h2>
                 <ul>
-                    <li>Bachelor's, Master's, or Ph.D. degree in Computer Science, Artificial Intelligence, Machine Learning, or a related field.</li>
+                    <li>Bachelor's, Master's, or Ph.D. degree in Computer Science, Artificial Intelligence, Machine
+                        Learning, or a related field.</li>
                     <li>Proven experience in developing and implementing machine learning models.</li>
                     <li>Proficiency in programming languages such as Python, Java, or C++.</li>
                     <li>Strong knowledge of machine learning frameworks like TensorFlow, PyTorch, or scikit-learn.</li>
                     <li>Excellent problem-solving skills and a keen interest in tackling complex challenges.</li>
-                    <li>Effective communication skills to collaborate with diverse teams and convey technical concepts.</li>
+                    <li>Effective communication skills to collaborate with diverse teams and convey technical concepts.
+                    </li>
                 </ul>
                 <h2>PREFERRED QUALIFICATIONS</h2>
                 <ul>
-                    <li>Advanced degree (Master's or Ph.D.) in Computer Science, Artificial Intelligence, or a related field.</li>
-                    <li>Previous experience working on projects related to natural language processing (NLP), computer vision, or reinforcement learning.</li>
-                    <li>Familiarity with cloud computing platforms (e.g., AWS, Azure, Google Cloud) and experience deploying models in a cloud environment.</li>
+                    <li>Advanced degree (Master's or Ph.D.) in Computer Science, Artificial Intelligence, or a related
+                        field.</li>
+                    <li>Previous experience working on projects related to natural language processing (NLP), computer
+                        vision, or reinforcement learning.</li>
+                    <li>Familiarity with cloud computing platforms (e.g., AWS, Azure, Google Cloud) and experience
+                        deploying models in a cloud environment.</li>
                     <li>Experience with big data technologies and frameworks (e.g., Hadoop, Spark).</li>
-                    <li>Track record of contributing to open-source AI projects or publications in reputable conferences or journals.</li>
+                    <li>Track record of contributing to open-source AI projects or publications in reputable conferences
+                        or journals.</li>
                 </ul>
                 <div class="job_detail_benefit">
-                    <p><em>* Benefits/perks listed below may vary depending on the nature of your employment with Lapis and the country where you work.</em></p>
+                    <p><em>* Benefits/perks listed below may vary depending on the nature of your employment with Lapis
+                            and the country where you work.</em></p>
                     <div class="job_detail_benefit_list">
                         <div class="first_benefit_list">
                             <ul>
                                 <li><i class="fa-solid fa-heart-pulse"></i>&nbsp;Industry leading healthcare</li>
                                 <li><i class="fa-solid fa-tags"></i>&nbsp;Discounts on products and services</li>
-                                <li><i class="fa-solid fa-person-breastfeeding"></i>&nbsp;Maternity and paternity leave</li>
+                                <li><i class="fa-solid fa-person-breastfeeding"></i>&nbsp;Maternity and paternity leave
+                                </li>
                                 <li><i class="fa-solid fa-heart"></i>&nbsp;Giving programs</li>
                             </ul>
                         </div>
@@ -128,7 +143,8 @@
                                 <li><i class="fa-solid fa-graduation-cap"></i>&nbsp;Educational resources</li>
                                 <li><i class="fa-solid fa-money-bills"></i>&nbsp;Savings and investments</li>
                                 <li>&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Generous time away</li>
-                                <li><i class="fa-solid fa-user-group"></i>&nbsp;Opportunities to network and connect</li>
+                                <li><i class="fa-solid fa-user-group"></i>&nbsp;Opportunities to network and connect
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -146,7 +162,8 @@
             </div>
             <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Perth, WA, AU</strong></p><br>
             <div class="job_detail_aside">
-                <p>Server is a crucial part of a tech company. We're seeking for skilled Server Technicians to ensure the seamless operation of our server infrastructure.</p>
+                <p>Server is a crucial part of a tech company. We're seeking for skilled Server Technicians to ensure
+                    the seamless operation of our server infrastructure.</p>
                 <aside>
                     <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
                 </aside>
@@ -155,12 +172,15 @@
                 <hr>
                 <p class="salary"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;4000-6000 USD</p>
                 <h2>DESCRIPTION</h2>
-                <p>Are you passionate about maintaining a robust and efficient server infrastructure? Join Lapis as we look for a skilled and dedicated Server Technician to play a key role in ensuring the reliability and performance of our server systems.</p>
+                <p>Are you passionate about maintaining a robust and efficient server infrastructure? Join Lapis as we
+                    look for a skilled and dedicated Server Technician to play a key role in ensuring the reliability
+                    and performance of our server systems.</p>
                 <h2>Responsibilities</h2>
                 <ol>
                     <li>Install, configure, and maintain server hardware and software.</li>
                     <li>Monitor server performance and troubleshoot issues promptly to minimize downtime.</li>
-                    <li>Collaborate with IT and development teams to optimize server efficiency and implement upgrades.</li>
+                    <li>Collaborate with IT and development teams to optimize server efficiency and implement upgrades.
+                    </li>
                     <li>Conduct routine system audits to ensure security and compliance standards are met.</li>
                     <li>Provide technical support and resolve server-related incidents and service requests.</li>
                 </ol>
@@ -182,13 +202,15 @@
                     <li>Previous experience in data center management and optimization.</li>
                 </ul>
                 <div class="job_detail_benefit">
-                    <p><em>* Benefits/perks listed below may vary depending on the nature of your employment with Lapis and the country where you work.</em></p>
+                    <p><em>* Benefits/perks listed below may vary depending on the nature of your employment with Lapis
+                            and the country where you work.</em></p>
                     <div class="job_detail_benefit_list">
                         <div class="first_benefit_list">
                             <ul>
                                 <li><i class="fa-solid fa-heart-pulse"></i>&nbsp;Industry leading healthcare</li>
                                 <li><i class="fa-solid fa-tags"></i>&nbsp;Discounts on products and services</li>
-                                <li><i class="fa-solid fa-person-breastfeeding"></i>&nbsp;Maternity and paternity leave</li>
+                                <li><i class="fa-solid fa-person-breastfeeding"></i>&nbsp;Maternity and paternity leave
+                                </li>
                                 <li><i class="fa-solid fa-heart"></i>&nbsp;Giving programs</li>
                             </ul>
                         </div>
@@ -197,7 +219,8 @@
                                 <li><i class="fa-solid fa-graduation-cap"></i>&nbsp;Educational resources</li>
                                 <li><i class="fa-solid fa-money-bills"></i>&nbsp;Savings and investments</li>
                                 <li>&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Generous time away</li>
-                                <li><i class="fa-solid fa-user-group"></i>&nbsp;Opportunities to network and connect</li>
+                                <li><i class="fa-solid fa-user-group"></i>&nbsp;Opportunities to network and connect
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -215,23 +238,30 @@
             </div>
             <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Sydney, NSW, AU</strong></p> <br>
             <div class="job_detail_aside">
-                <p>Are you dedicated to maintaining excellence in software product quality? Take the opportunity to join our dynamic team as a Quality Assurance Tester today!</p>
+                <p>Are you dedicated to maintaining excellence in software product quality? Take the opportunity to join
+                    our dynamic team as a Quality Assurance Tester today!</p>
                 <aside>
-                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
                 </aside>
             </div>
             <div class="job_detail_content3">
                 <hr>
                 <p class="salary"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;1000-1200 USD</p>
                 <h2>DESCRIPTION</h2>
-                <p>Are you passionate about ensuring the quality and reliability of software products? Do you have a keen eye for detail and enjoy the thrill of identifying and fixing bugs? If so, we want you on our team!</p>
+                <p>Are you passionate about ensuring the quality and reliability of software products? Do you have a
+                    keen eye for detail and enjoy the thrill of identifying and fixing bugs? If so, we want you on our
+                    team!</p>
                 <h2>Responsibilities</h2>
                 <ol>
                     <li>Conduct thorough testing of mobile applications across various devices and platforms.</li>
-                    <li>Develop and execute comprehensive test plans and test cases to identify bugs and ensure functionality.</li>
-                    <li>Collaborate closely with developers, product managers, and UX designers to understand requirements and user scenarios.</li>
-                    <li>Perform regression testing to verify bug fixes and ensure new features meet quality standards.</li>
-                    <li>Report and document issues with clarity, including steps to reproduce and severity assessments.</li>
+                    <li>Develop and execute comprehensive test plans and test cases to identify bugs and ensure
+                        functionality.</li>
+                    <li>Collaborate closely with developers, product managers, and UX designers to understand
+                        requirements and user scenarios.</li>
+                    <li>Perform regression testing to verify bug fixes and ensure new features meet quality standards.
+                    </li>
+                    <li>Report and document issues with clarity, including steps to reproduce and severity assessments.
+                    </li>
                     <li>Participate in the continuous improvement of testing processes and methodologies. </li>
                 </ol>
                 <h2>BASIC QUALIFICATIONS</h2>
@@ -253,13 +283,15 @@
                 </ul>
 
                 <div class="job_detail_benefit">
-                    <p><em>* Benefits/perks listed below may vary depending on the nature of your employment with Lapis and the country where you work.</em></p>
+                    <p><em>* Benefits/perks listed below may vary depending on the nature of your employment with Lapis
+                            and the country where you work.</em></p>
                     <div class="job_detail_benefit_list">
                         <div class="first_benefit_list">
                             <ul>
                                 <li><i class="fa-solid fa-heart-pulse"></i>&nbsp;Industry leading healthcare</li>
                                 <li><i class="fa-solid fa-tags"></i>&nbsp;Discounts on products and services</li>
-                                <li><i class="fa-solid fa-person-breastfeeding"></i>&nbsp;Maternity and paternity leave</li>
+                                <li><i class="fa-solid fa-person-breastfeeding"></i>&nbsp;Maternity and paternity leave
+                                </li>
                                 <li><i class="fa-solid fa-heart"></i>&nbsp;Giving programs</li>
                             </ul>
                         </div>
@@ -268,7 +300,8 @@
                                 <li><i class="fa-solid fa-graduation-cap"></i>&nbsp;Educational resources</li>
                                 <li><i class="fa-solid fa-money-bills"></i>&nbsp;Savings and investments</li>
                                 <li>&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Generous time away</li>
-                                <li><i class="fa-solid fa-user-group"></i>&nbsp;Opportunities to network and connect</li>
+                                <li><i class="fa-solid fa-user-group"></i>&nbsp;Opportunities to network and connect
+                                </li>
                             </ul>
                         </div>
                     </div>

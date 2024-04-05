@@ -1,3 +1,32 @@
+.manage-title {
+    font-size: 2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.manage-btn {
+    margin: auto;
+    background: none;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.color {
+    color: white;
+}
+
+.manage-content {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    letter-spacing: 1.2px;
+    font-size: 3em;
+}
+
 .manage__header {
     background-color: black;
     padding: 20px 0;
@@ -7,26 +36,40 @@
 
 }
 
-.manage-title {
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 .manage_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.active_menu{
-        flex-wrap: wrap;
-    }
+
+.active_menu {
+    flex-wrap: wrap;
+}
+
 @media (max-width:800px) {
-	.active_menu{
+    .active_menu {
         flex-wrap: wrap;
     }
+
     .card-body {
         overflow: scroll;
+    }
+}
+
+@media (max-width: 578px) {
+    .manage-content {
+        font-size: 2em;
+    }
+
+    .manage-title {
+        font-size: 1.1em;
+    }
+
+    .manage__header {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10x 0;
+        align-items: center;
     }
 }

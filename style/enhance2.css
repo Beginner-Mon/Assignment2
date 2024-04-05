@@ -35,6 +35,7 @@
     padding: 10px 0;
     letter-spacing: 1px;
     font-size: 1.2em;
+
 }
 
 .enhance2__container__content {
@@ -48,15 +49,25 @@
     white-space: pre;
     padding: 3px;
     background-color: black;
-    color: green;
-    width: 60%;        
+    color: lightgreen;
+    max-width: 600px;
+    max-height: 500px;
     overflow: scroll;
-   
+
 }
-.enhance2__code__explain{
+
+.enhance2__code__explain {
     padding-bottom: 30px;
+    line-height: 1.5;
 }
-.code__images{
+
+.enhance__container_title_1 {
+    padding: 10px 0;
+    font-size: 1.5em;
+
+}
+
+.code__images {
     object-fit: cover;
     top: 20px;
     width: 85%;

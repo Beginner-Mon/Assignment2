@@ -2628,6 +2628,81 @@ code {
 ******************************************************************************************************
 */
 
+.manage-title {
+    font-size: 2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.manage-btn {
+    margin: auto;
+    background: none;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.color {
+    color: white;
+}
+
+.manage-content {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    letter-spacing: 1.2px;
+    font-size: 3em;
+}
+
+.manage__header {
+    background-color: black;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.manage_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active_menu {
+    flex-wrap: wrap;
+}
+
+@media (max-width:800px) {
+    .active_menu {
+        flex-wrap: wrap;
+    }
+
+    .card-body {
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 578px) {
+    .manage-content {
+        font-size: 2em;
+    }
+
+    .manage-title {
+        font-size: 1.1em;
+    }
+
+    .manage__header {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10x 0;
+        align-items: center;
+    }
+}
 
 /* Body styling */
 .manage_body_container {
@@ -2661,9 +2736,10 @@ code {
 }
 
 @media (max-width:800px) {
-    .display_container{
+    .display_container {
         flex-wrap: wrap;
     }
+
     .card-body {
         overflow: scroll;
     }
@@ -2707,16 +2783,6 @@ code {
     color: black;
 }
 
-
-/* Form styling */
-/* form {
-    width: 100%;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-} */
 
 .manage_input,
 select {
@@ -2812,4 +2878,88 @@ select {
     margin-top: 3%;
     text-align: center;
     margin-bottom: 3%;
+}
+
+
+
+/*****************************************************************************************************
+*************************************DESIGN ENHANCEMENTS2.PHP************************************************
+******************************************************************************************************
+******************************************************************************************************
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.enhance2__header {
+    padding: 10px;
+}
+
+.enhance2__header-title {
+    font-size: 3em;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+.enhance2__header-span {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+.enhance2__container {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.enhance2__container__title {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+
+}
+
+.enhance2__container__content {
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+.enhance2__container__code {
+    display: block;
+    margin: 10px 0;
+    white-space: pre;
+    padding: 3px;
+    background-color: black;
+    color: lightgreen;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: scroll;
+
+}
+
+.enhance2__code__explain {
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+
+.enhance__container_title_1 {
+    padding: 10px 0;
+    font-size: 1.5em;
+
+}
+
+.code__images {
+    object-fit: cover;
+    top: 20px;
+    width: 85%;
+    height: 60%;
 }

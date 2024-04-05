@@ -2,12 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <?php require_once "head.inc"; ?>
 
     <title>Application Form</title>
 </head>
@@ -45,9 +40,8 @@
 
             <fieldset class="form--reference">
                 <legend class="form-legend"> Your Position</legend>
-                <input class="form-input" type="text" name="reference__number" id="re-num"
-                    placeholder="Job ID Number" pattern="<?php echo $pattern; ?>" title="ids need to be available"
-                    required>
+                <input class="form-input" type="text" name="reference__number" id="re-num" placeholder="Job ID Number"
+                    pattern="<?php echo $pattern; ?>" title="ids need to be available" required>
             </fieldset>
 
 

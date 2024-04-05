@@ -2,12 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <?php require_once "head.inc"; ?>
     <title>Lapis</title>
 </head>
 
@@ -56,7 +51,8 @@
             <div class="container-2__block container-2__illustration">
                 <figure class="index__figure">
                     <img class="container-2__img" src="images/background-1.png" alt="">
-                    <figcaption class="index__figcaption">Celebrating innovations: Exploring the vast realms of knowledge with Lapis, where curiosity meets boundless possibilities.</figcaption>
+                    <figcaption class="index__figcaption">Celebrating innovations: Exploring the vast realms of
+                        knowledge with Lapis, where curiosity meets boundless possibilities.</figcaption>
                 </figure>
             </div>
         </div>
@@ -78,8 +74,10 @@
                 <p class="container-3__content">Lapis swiftly became a global favorite, recognized for its innovative
                     approach to information retrieval. Its cutting-edge algorithms solidified its position as a leader
                     in the search engine industry.</p>
-                <p class="container-3__content">Transcending borders and languages to unite minds worldwide, Lapis ubiquitous presence serves as a gateway to information, knowledge, and endless possibilities.
-                    Lapis's unparalleled reach and accessibility have made it a cornerstone of modern life, empowering users to explore, discover, and connect with the world at their fingertips. </p>
+                <p class="container-3__content">Transcending borders and languages to unite minds worldwide, Lapis
+                    ubiquitous presence serves as a gateway to information, knowledge, and endless possibilities.
+                    Lapis's unparalleled reach and accessibility have made it a cornerstone of modern life, empowering
+                    users to explore, discover, and connect with the world at their fingertips. </p>
             </div>
             <div class="container-3__para">
                 <h4 class="container-3__title">Personal Intelligence</h4>
@@ -97,8 +95,12 @@
                 <img src="images/container-4--img.png" alt="" class="container-4__box__img img1">
                 <div class="container-4__box__news">
                     <h2 class="box__title">Update 1.7.25</h2>
-                    <p class="box__content">Lapis's latest update heralds a new era of innovation, promising enhanced user experiences and cutting-edge features.
-                        With a focus on speed, reliability, and personalized interactions, this update seeks to elevate the search and browsing experience to unprecedented levels. From refined algorithms to intuitive interfaces, Lapis continues to push the boundaries of technological advancement, ensuring that users stay ahead in an ever-evolving digital landscape. </p>
+                    <p class="box__content">Lapis's latest update heralds a new era of innovation, promising enhanced
+                        user experiences and cutting-edge features.
+                        With a focus on speed, reliability, and personalized interactions, this update seeks to elevate
+                        the search and browsing experience to unprecedented levels. From refined algorithms to intuitive
+                        interfaces, Lapis continues to push the boundaries of technological advancement, ensuring that
+                        users stay ahead in an ever-evolving digital landscape. </p>
                 </div>
             </div>
 
@@ -106,8 +108,11 @@
                 <img src="images/container-4__img2.png" alt="" class="container-4__box__img img2">
                 <div class="container-4__box__news">
                     <h2 class="box__title">Nextgen Search.</h2>
-                    <p class="box__content">Powered by state-of-the-art algorithms and AI-driven innovations, Lapis's latest update represents the pinnacle of technological achievement.
-                        Stay ahead of the curve with the most advanced search capabilities on the planet. With a focus on speed and efficiency, the NextGen Search ensures lightning-fast results, delivering information at unprecedented speeds.
+                    <p class="box__content">Powered by state-of-the-art algorithms and AI-driven innovations, Lapis's
+                        latest update represents the pinnacle of technological achievement.
+                        Stay ahead of the curve with the most advanced search capabilities on the planet. With a focus
+                        on speed and efficiency, the NextGen Search ensures lightning-fast results, delivering
+                        information at unprecedented speeds.
                         Say goodbye to long loading times and hello to instantaneous access to knowledge.</p>
                 </div>
             </div>
@@ -115,8 +120,10 @@
                 <img src="images/container-4--img3.png" alt="" class="container-4__box__img img3">
                 <div class="container-4__box__news">
                     <h2 class="box__title">Enhancing Performance and Reliability.</h2>
-                    <p class="box__content">Experience a seamless browsing journey with Lapis's latest update, focused on resolving pesky bugs and glitches.
-                        Enjoy improved stability and reliability as you navigate the digital realm. With our commitment to delivering excellence,
+                    <p class="box__content">Experience a seamless browsing journey with Lapis's latest update, focused
+                        on resolving pesky bugs and glitches.
+                        Enjoy improved stability and reliability as you navigate the digital realm. With our commitment
+                        to delivering excellence,
                         rest assured that your browsing experience is smoother than ever before.</p>
                 </div>
             </div>
@@ -124,7 +131,8 @@
                 <img src="images/container-4__img4.png" alt="" class="container-4__box__img img4">
                 <div class="container-4__box__news">
                     <h2 class="box__title">Market Update: Lapis's Latest Innovations Drive Digital Transformation.</h2>
-                    <p class="box__content">From enhanced search capabilities to personalized recommendations, explore how Lapis's innovations
+                    <p class="box__content">From enhanced search capabilities to personalized recommendations, explore
+                        how Lapis's innovations
                         are shaping the future of online interactions. Don't miss out on the latest trends
                         dive into the transformative power of Lapis's market update today.</p>
                 </div>
@@ -139,7 +147,7 @@
             <hr>
         </div>
     </div>
-   
+
     <?php
     require_once "footer.inc";
     ?>
