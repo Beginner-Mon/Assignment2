@@ -20,6 +20,7 @@ else{
 
 
   if (empty($_POST["update_id_number"])) {
+    echo '<a href="manage.php">Back</a>';
     echo "Please enter EOI.";
   } else {
     $update_id_number = trim($_POST["update_id_number"]);
@@ -28,8 +29,13 @@ else{
     // Update the status in the database
     
       if (mysqli_query($con, $update_query)) {
-        echo '<a href="manage.php">Back</a>';
-        echo "<p>Status updated successfully!</p>";
+        if (mysqli_affected_rows($con) > 0) {
+          echo '<a href="manage.php">Back</a>';
+          echo "<p>Status updated successfully!</p>";
+        } else {
+          echo '<a href="manage.php">Back</a>';
+          echo "<p class = \"ok\">No data found for the specified EOI.</p>";
+        }
       } else {
         echo '<a href="manage.php">Back</a>';
         echo "<p>Error updating status: </p>" . mysqli_error($con);
