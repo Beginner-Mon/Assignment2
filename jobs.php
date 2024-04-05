@@ -80,7 +80,7 @@
             <div class="job_detail_aside">
                 <p>AI is growing stronger and faster than ever. Are you passionate about shaping the future with Artificial Intelligence? Join our dynamic team at Lapis as an AI Engineer!</p>
                 <aside>
-                    <a href="apply.html" class="aside_apply_button">Apply now</a>
+                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
                 </aside>
             </div>
             <div class="job_detail_content1">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="apply.html" class="apply_button">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
             </div>
             <label class="Readmore" for="check1">Read more...</label>
         </div>
@@ -143,11 +143,11 @@
                 <h2 class="job_detail_title_name">SERVER TECHNICIAN</h2>
                 <h2 class="job_id">ID: SER15</h2>
             </div>
-            <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Ho Chi Minh City, VN</strong></p><br>
+            <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Perth, WA, AU</strong></p><br>
             <div class="job_detail_aside">
                 <p>Server is a crucial part of a tech company. We're seeking for skilled Server Technicians to ensure the seamless operation of our server infrastructure.</p>
                 <aside>
-                    <a href="apply.html" class="aside_apply_button">Apply now</a>
+                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
                 </aside>
             </div>
             <div class="job_detail_content2">
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="apply.html" class="apply_button">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
             </div>
             <label class="Readmore" for="check2">Read more...</label>
         </div>
@@ -211,11 +211,11 @@
                 <h2 class="job_detail_title_name">QUALITY ASSURANCE TESTER</h2>
                 <h2 class="job_id">ID: TES11</h2>
             </div>
-            <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Ha Noi City, VN</strong></p> <br>
+            <p><strong><i class="fa-solid fa-location-dot"></i> &nbsp;Sydney, NSW, AU</strong></p> <br>
             <div class="job_detail_aside">
                 <p>Are you dedicated to maintaining excellence in software product quality? Take the opportunity to join our dynamic team as a Quality Assurance Tester today!</p>
                 <aside>
-                    <a href="apply.html" class="aside_apply_button">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
                 </aside>
             </div>
             <div class="job_detail_content3">
@@ -271,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="apply.html" class="apply_button">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
             </div>
             <label class="Readmore" for="check3">Read more...</label>
         </div>
