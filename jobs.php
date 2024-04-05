@@ -133,6 +133,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
             </div>
             <label class="Readmore" for="check1">Read more...</label>
@@ -201,6 +202,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
             </div>
             <label class="Readmore" for="check2">Read more...</label>
@@ -271,6 +273,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
             </div>
             <label class="Readmore" for="check3">Read more...</label>

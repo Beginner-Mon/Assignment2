@@ -78,7 +78,7 @@
                 <p class="container-3__content">Lapis swiftly became a global favorite, recognized for its innovative
                     approach to information retrieval. Its cutting-edge algorithms solidified its position as a leader
                     in the search engine industry.</p>
-                <p class="container-3__content">Transcending borders and languages to unite minds worldwide,Lapis ubiquitous presence serves as a gateway to information, knowledge, and endless possibilities.
+                <p class="container-3__content">Transcending borders and languages to unite minds worldwide, Lapis ubiquitous presence serves as a gateway to information, knowledge, and endless possibilities.
                     Lapis's unparalleled reach and accessibility have made it a cornerstone of modern life, empowering users to explore, discover, and connect with the world at their fingertips. </p>
             </div>
             <div class="container-3__para">
@@ -98,7 +98,7 @@
                 <div class="container-4__box__news">
                     <h2 class="box__title">Update 1.7.25</h2>
                     <p class="box__content">Lapis's latest update heralds a new era of innovation, promising enhanced user experiences and cutting-edge features.
-                        With a focus on speed, reliability, and personalized interactions, this update seeks to elevate the search and browsing experience to unprecedented levels. From refined algorithms to intuitive interfaces, Google continues to push the boundaries of technological advancement, ensuring that users stay ahead in an ever-evolving digital landscape. </p>
+                        With a focus on speed, reliability, and personalized interactions, this update seeks to elevate the search and browsing experience to unprecedented levels. From refined algorithms to intuitive interfaces, Lapis continues to push the boundaries of technological advancement, ensuring that users stay ahead in an ever-evolving digital landscape. </p>
                 </div>
             </div>
 
