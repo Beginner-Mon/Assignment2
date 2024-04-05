@@ -10,7 +10,6 @@ $filter_value_ID = isset($_POST["jobs_filter"]) ? trim($_POST["jobs_filter"]) : 
 
 // Check if all filter values are empty
 if (empty($filter_value_Fname) && empty($filter_value_Lname) && empty($filter_value_ID)) {
-    echo '<a href="manage.php">Back</a>';
     echo "<p>Please enter at least one filter criteria.</p>";
     exit; // Stop further execution
 }
@@ -34,10 +33,8 @@ $result = mysqli_query($conn, $query);
 
 
 if (!$result)  {
-        echo '<a href="manage.php">Back</a>';
         echo "<p> Something is wrong with the query: ", mysqli_error($conn), "</p>";
 }elseif (!(mysqli_num_rows($result) > 0)){
-            echo '<a href="manage.php">Back</a>';
             echo "<p>No data found for the given filter</p>";
             exit;
 } else {
