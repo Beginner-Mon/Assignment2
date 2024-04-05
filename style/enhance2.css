@@ -43,10 +43,13 @@
 }
 
 .enhance2__container__code {
+    display: block;
     margin: 10px 0;
+    white-space: pre;
     padding: 3px;
     background-color: black;
     color: green;
     width: 60%;
     overflow: scroll;
+   
 }
