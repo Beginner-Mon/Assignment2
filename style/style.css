@@ -2660,6 +2660,16 @@ code {
     margin-right: 20px;
 }
 
+@media (max-width:800px) {
+    .display_container{
+        flex-wrap: wrap;
+    }
+    .card-body {
+        overflow: scroll;
+    }
+}
+
+
 .caution_btn {
     align-items: center;
     background-color: red;
