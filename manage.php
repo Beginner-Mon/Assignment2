@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/manage.css">
-    <title>Managament</title>
+    <title>Management</title>
 </head>
 
 <body>
@@ -74,8 +74,9 @@
     <body class='manage_body_container'>
         <?php
         require_once ("settings.php");
+        $username = get_username();
         session_start();
-        if (!isset($_SESSION['SSID'])) {
+        if (!isset($_SESSION['SSID']) && $username == $_SESSION['SSID']) {
             header("location: login.php");
         }
 
