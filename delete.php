@@ -8,6 +8,7 @@ $delete_submit_id = isset($_POST['jobs_delete']) ? $_POST['jobs_delete'] : '';
 
 // Check if the delete_submit_id is empty
 if (empty($delete_submit_id)) {
+    echo '<a href="manage.php">Back</a>';
     echo "<p class = \"wrong\">No job ID provided for deletion.</p>";
 } else {
     // Delete related rows from the Skills table
@@ -19,12 +20,15 @@ if (empty($delete_submit_id)) {
     $result_applicant = mysqli_query($conn, $delete_applicant_query);
 
     if (!$result_applicant || !$result_skills) {
+        echo '<a href="manage.php">Back</a>';
         echo "<p class = \"wrong\"> Something is wrong with the deletion query: ", mysqli_error($conn), "</p>";
     } else {
         // Check if any rows were affected
         if (mysqli_affected_rows($conn) > 0) {
+            echo '<a href="manage.php">Back</a>';
             echo "<p class = \"ok\">Successfully deleted data.</p>";
         } else {
+            echo '<a href="manage.php">Back</a>';
             echo "<p class = \"ok\">No data found for the specified job ID.</p>";
         }
     }

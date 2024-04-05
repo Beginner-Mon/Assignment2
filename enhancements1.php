@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
- 
+
 
     <title>Enhancements</title>
 </head>
@@ -55,7 +55,9 @@
                     device
                     with a minimum width of 280px (galaxy fold). <br>
                     To implement this feature, the core of it is to apply the
-                    <code class="code-content">display:none</code> property for the content of the container combined with the <code class="code-content">display:flex</code> for the whole content when hovering on it. Additionally, we add more key animation to make the transition runs more smoothly.
+                    <code class="code-content"> display:none</code> property for the content of the container combined
+                    with the <code class="code-content">display:flex</code> for the whole content when hovering on it.
+                    Additionally, we add more key animation to make the transition runs more smoothly.
                 </p>
                 <pre>
                     <code>
@@ -149,8 +151,9 @@
                     to a
                     device
                     with a minimum width of 280px (galaxy fold). <br>
-                    class="enhance-2__content">To implement this feature, the core of it is to apply the
-                    <code class="code-content">position</code> property combined with the <code class="code-content">transition</code> property
+                    To implement this feature, the core of it is to apply the
+                    <code class="code-content">position</code> property combined with the <code
+                        class="code-content">transition</code> property
                 </p>
                 <pre>
         <code>
@@ -221,7 +224,7 @@
 
     <?php
     require_once "footer.inc"
-    ?>
+        ?>
 </body>
 
 </html>
