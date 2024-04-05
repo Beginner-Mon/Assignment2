@@ -35,9 +35,12 @@
             background: none;
             text-transform: capitalize;
             font-size: 1.1em;
-            color: white;
+            color: #ffffff;
             border: none;
             cursor: pointer;
+        }
+        .color{
+            color: white;
         }
 
         .manage-content {
@@ -205,9 +208,9 @@
                             <label for="jobs_filter">Job ID: </label>
                             <select name="jobs_filter" id="jobs_filter">
                                 <option value=""></option>
-                                <option value="800000">800000</option>
-                                <option value="800001">800001</option>
-                                <option value="800002">800002</option>
+                                <option class="color" value="800000">800000</option>
+                                <option class="color" value="800001">800001</option>
+                                <option class="color" value="800002">800002</option>
                             </select>
                             <div class='filter_button_align'>
                                 <p> <input type="submit" value="Search" class='manage_btn' /></p>
@@ -228,9 +231,9 @@
                             <label for="jobs_delete">Job ID for deletion: </label>
                             <select name="jobs_delete" id="jobs_delete">
                                 <option value=""></option>
-                                <option value="800000">800000</option>
-                                <option value="800001">800001</option>
-                                <option value="800002">800002</option>
+                                <option class="color" value="800000">800000</option>
+                                <option class="color" value="800001">800001</option>
+                                <option class="color" value="800002">800002</option>
                             </select>
                             <a><input type="submit" class='manage_btn' id="caution_btn" value="Delete"></a>
                         </fieldset>
@@ -247,9 +250,9 @@
                             </p>
                             <label for="update_status">Status: </label>
                             <select name="update_status" id="update_status">
-                                <option value="New">New</option>
-                                <option value="Current">Current</option>
-                                <option value="Final">Final</option>
+                                <option class="color" value="New">New</option>
+                                <option class="color" value="Current">Current</option>
+                                <option class="color" value="Final">Final</option>
                             </select>
                             <a><input type="submit" class='manage_btn' value="Update"></a>
                         </fieldset>
