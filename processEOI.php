@@ -50,6 +50,8 @@
 
     if (isset($_POST['other_skill']) && trim($_POST['other_skill']) != "") {
         $other_skill = $_POST['other_skill'];
+    } else {
+        $other_skill = "";
     }
 
     function check_job_ref($ref)
@@ -125,7 +127,7 @@
             $query = "INSERT INTO Skills( " . number_of_skills($nums) . " Other_skill, EOI) VALUES( " . join(",", $skills) . ", '$other_skill',$applicant_id)";
 
         } else {
-            $query = "INSERT INTO Skills( " . number_of_skills($nums) . " Other_skill, EOI) VALUES(  '$other_skill',$applicant_id)";
+            $query = "INSERT INTO Skills( " . number_of_skills($nums) . " Other_skill, EOI) VALUES( '$other_skill',$applicant_id)";
         }
         $result = mysqli_query($conn, $query);
         if (!$result) {
