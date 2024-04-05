@@ -1,6 +1,6 @@
 <?php
 
-require_once("settings.php");
+require_once ("settings.php");
 
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
 
@@ -36,7 +36,7 @@ if (!$result) {
 } else {
     echo "<table border=\"1\">";
     echo "<tr>"
-        
+
         . "<th scope=\"col\">First Name</th>"
         . "<th scope=\"col\">Last Name</th>"
         . "<th scope=\"col\">Gender</th>"
@@ -53,12 +53,12 @@ if (!$result) {
 
     while ($item = mysqli_fetch_assoc($result)) {
         echo "<tr>";
-        
+
         echo "<td>", $item["fname"], "</td>";
         echo "<td>", $item["lname"], "</td>";
         echo "<td>", $item["Gender"], "</td>";
         echo "<td>", $item["DoB"], "</td>";
-        
+
         echo "<td>", $item["Phone"], "</td>";
         echo "<td>", $item["Email"], "</td>";
         echo "<td>", $item["Skill_1"], "</td>";
