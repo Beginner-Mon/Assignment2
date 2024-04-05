@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,30 @@
     <title>Success</title>
     <style>
         .class {
-            height :600px;
+            height: 600px;
             text-align: center;
 
 
         }
+
         .ok {
             margin: auto;
             color: #003459;
-            text-align:center;
+            text-align: center;
 
         }
     </style>
 </head>
+
 <body>
     <?php
-        require_once "header.php";
+    require_once "header.php";
     ?>
     <div class="class">
-            <h1 class ='ok'>Successfully added new car record</h1>
+        <h1 class='ok'>Successfully added new record</h1>
     </div>
     <?php
-        require_once "footer.inc";?>
+    require_once "footer.inc"; ?>
 </body>
+
 </html>
