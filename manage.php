@@ -34,7 +34,7 @@
     background: none;
     text-transform: capitalize;
     font-size: 1.1em;
-    color: #ffffff;
+    color: white;
     border: none;
     cursor: pointer;
 }
@@ -152,7 +152,7 @@
     <div class="active_menu">
         <div class='left_panel_manage'>
             <div class="filter_menu" id="filter_menu">
-                <form action="filter.php" method='GET' target="_blank">
+                <form action="filter.php" method='POST' target="_blank">
                     <fieldset class='manage_fieldset_config'><legend>FILTER</legend>
                         <p class="row">	<label for="filter_Fname">First Name: </label>
                         <input class = "manage_input" type="text" name="filter_Fname" id="filter_Fname" /></p>

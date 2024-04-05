@@ -4,9 +4,9 @@ require_once ("settings.php");
 
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
 
-$filter_value_Fname = isset($_GET["filter_Fname"]) ? trim($_GET["filter_Fname"]) : "";
-$filter_value_Lname = isset($_GET["filter_Lname"]) ? trim($_GET["filter_Lname"]) : "";
-$filter_value_ID = isset($_GET["jobs_filter"]) ? trim($_GET["jobs_filter"]) : "";
+$filter_value_Fname = isset($_POST["filter_Fname"]) ? trim($_POST["filter_Fname"]) : "";
+$filter_value_Lname = isset($_POST["filter_Lname"]) ? trim($_POST["filter_Lname"]) : "";
+$filter_value_ID = isset($_POST["jobs_filter"]) ? trim($_POST["jobs_filter"]) : "";
 
 // Check if all filter values are empty
 if (empty($filter_value_Fname) && empty($filter_value_Lname) && empty($filter_value_ID)) {
