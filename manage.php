@@ -125,6 +125,8 @@
                 mysqli_close($conn);
                 return $token;
             } else {
+                mysqli_free_result($result);
+                mysqli_close($conn);
                 header('location: login.php');
             }
         }
@@ -168,7 +170,7 @@
             session_destroy();
             header("location: login.php");
         }
-        echo $_SESSION['SSID'];
+
         ?>
         <h1 class="manage-content">Applicant tables</h1>
 
@@ -328,7 +330,7 @@
                     </div>
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h2 class="display-6 text-center">Job list</h2>
+                            <h2 class="display-6 text-center">SKill list</h2>
                         </div>
                         <?php
 
