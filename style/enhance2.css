@@ -49,14 +49,16 @@
     padding: 3px;
     background-color: black;
     color: green;
-    width: 60%;
+    width: 60%;        
+    overflow: scroll;
    
 }
 .enhance2__code__explain{
     padding-bottom: 30px;
 }
 .code__images{
-    max-width: 1000px;
-    max-height: 1000px;
-    padding: 2%
+    object-fit: cover;
+    top: 20px;
+    width: 85%;
+    height: 60%;
 }

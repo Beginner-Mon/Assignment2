@@ -37,12 +37,12 @@
     //prevent time attack
     usleep(1000);
                 </code>
-                <p class="enhance2__code__explain">usleep helps by introducing a delay, which helps to control certain operations.<br>In this case, it is use to prevent time attack.</p>
+                <p class="enhance2__code__explain">Usleep helps by introducing a delay, which helps to control certain operations.<br>In this case, it is use to prevent time attack.</p>
 <code class="enhance2__container__code">
     //prevent session hijacking
     session_regenerate_id(true);
             </code>
-            <p class="enhance2__code__explain">session regenerate id helps prevent attackers from hijacking a session by stealing the session id.<br> By changing the id constantly, even if the attacker obtain an id, it became useless as soon as the session is regenerated.</p>
+            <p class="enhance2__code__explain">Session regenerate id helps prevent attackers from hijacking a session by stealing the session id.<br> By changing the id constantly, even if the attacker obtain an id, it became useless as soon as the session is regenerated.</p>
                 </pre>
             </div>
 
@@ -58,8 +58,9 @@
     CREATE TABLE Skills(
     EOI FOREIGN KEY REFERENCES Applicant(EOI));
                     </code>
-                    <p class="enhance2__code__explain">Foreign key create a link between tables. <br>In this example, the EOI in the skill table is link to the EOI in Applicant table, which ensure data integrity.</p>
                 </pre>
+                <p class="enhance2__code__explain">Foreign key create a link between tables.<br>In this example, the EOI in the skill table is link to the EOI in Applicant table, which ensure data integrity.</p>
+                
             </div>
 
         </section>
