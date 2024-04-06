@@ -14,7 +14,9 @@ if (empty($filter_value_Fname) && empty($filter_value_Lname) && empty($filter_va
     exit; // Stop further execution
 }
 
-$query = "SELECT fname, lname, Gender, DoB, Phone,Email,Job_ref ,Skill_1,Skill_2,Skill_3,Skill_4, Other_Skill, Status FROM Applicant INNER JOIN Skills on Applicant.EOI = Skills.EOI INNER JOIN Job_description on Applicant.Job_ID = Job_description.Job_ID WHERE 1 ";
+$query = "SELECT fname, lname, Gender, DoB, Phone,Email, Job_ref ,Skill_1,Skill_2,Skill_3,Skill_4, Other_Skill, Status FROM Applicant 
+INNER JOIN Skills on Applicant.EOI = Skills.EOI 
+INNER JOIN Job_description on Applicant.Job_ID = Job_description.Job_ID WHERE 1 ";
 
 if (!empty($filter_value_ID)) {
     $query .= " AND Job_ID = '$filter_value_ID'";

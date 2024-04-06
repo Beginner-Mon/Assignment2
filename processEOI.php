@@ -51,7 +51,7 @@
     if (isset($_POST['other_skill']) && trim($_POST['other_skill']) != "") {
         $other_skill = $_POST['other_skill'];
     } else {
-        $other_skill = "";
+        $other_skill = "No Skill";
     }
 
     function check_job_ref($ref)
