@@ -138,7 +138,8 @@
             if (isset($result) && is_resource($result)) {
                 mysqli_free_result($result);
             }
-            require "success.php";
+            mysqli_close($conn);
+            header("location: success.php");
         }
         mysqli_close($conn);
     }
