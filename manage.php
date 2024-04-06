@@ -16,7 +16,7 @@
         require_once ("settings.php");
 
         session_start();
-        if (!isset($_SESSION['SSID']) || get_token() != $_SESSION['SSID']) {
+        if (!isset($_SESSION['SSID']) || get_SSID() != $_SESSION['SSID']) {
             header("location: login.php");
         }
 
@@ -41,7 +41,7 @@
             $_SESSION['last_timestamp'] = time();
 
         }
-        function get_token()
+        function get_SSID()
         {
             require ("settings.php");
 
@@ -51,7 +51,7 @@
                 exit();
             }
 
-            $query = "SELECT token FROM Admin WHERE token = '" . $_SESSION['SSID'] . "' ";
+            $query = "SELECT SSID FROM Admin WHERE SSID = '" . $_SESSION['SSID'] . "' ";
 
             $result = mysqli_query($conn, $query);
             if (mysqli_num_rows($result) > 0) {
@@ -59,7 +59,7 @@
 
                 $token = "";
 
-                $token = $row['token'];
+                $token = $row['SSID'];
 
                 mysqli_free_result($result);
                 mysqli_close($conn);
@@ -80,7 +80,7 @@
                 exit();
             }
 
-            $query = "SELECT username FROM Admin WHERE token = '" . $_SESSION['SSID'] . "' ";
+            $query = "SELECT username FROM Admin WHERE SSID = '" . $_SESSION['SSID'] . "' ";
 
             $result = mysqli_query($conn, $query);
             $row = mysqli_fetch_assoc($result);

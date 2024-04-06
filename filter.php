@@ -14,8 +14,7 @@ if (empty($filter_value_Fname) && empty($filter_value_Lname) && empty($filter_va
     exit; // Stop further execution
 }
 
-$query = "SELECT fname, lname, Gender, DoB, Phone,Email, Skill_1,Skill_2,Skill_3,Skill_4, Other_Skill, Status FROM Applicant
-INNER JOIN Skills on Applicant.EOI = Skills.EOI WHERE 1";
+$query = "SELECT fname, lname, Gender, DoB, Phone,Email,Job_ref ,Skill_1,Skill_2,Skill_3,Skill_4, Other_Skill, Status FROM Applicant INNER JOIN Skills on Applicant.EOI = Skills.EOI INNER JOIN Job_description on Applicant.Job_ID = Job_description.Job_ID WHERE 1 ";
 
 if (!empty($filter_value_ID)) {
     $query .= " AND Job_ID = '$filter_value_ID'";
@@ -32,11 +31,11 @@ if (!empty($filter_value_Lname)) {
 $result = mysqli_query($conn, $query);
 
 
-if (!$result)  {
-        echo "<p> Something is wrong with the query: ", mysqli_error($conn), "</p>";
-}elseif (!(mysqli_num_rows($result) > 0)){
-            echo "<p>No data found for the given filter</p>";
-            exit;
+if (!$result) {
+    echo "<p> Something is wrong with the query: ", mysqli_error($conn), "</p>";
+} elseif (!(mysqli_num_rows($result) > 0)) {
+    echo "<p>No data found for the given filter</p>";
+    exit;
 } else {
     echo "<table border=\"1\">";
     echo "<tr>"

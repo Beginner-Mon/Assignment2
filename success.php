@@ -20,7 +20,7 @@
             margin: auto;
             color: #003459;
             text-align: center;
-
+            font-size: 2em;
         }
     </style>
 </head>
