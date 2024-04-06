@@ -104,7 +104,7 @@
         $query = "INSERT INTO Applicant(Fname, Lname, Gender, Phone, Email, DoB, Job_ID) VALUES ('$fname', '$lname','$gender', $phone, '$email','$date', $job_ref);";
         $result = mysqli_query($conn, $query);
         if (!$result) {
-            echo "<p>something is wrong $query</p>";
+            echo mysqli_error($conn);
         }
         if (isset($result) && is_resource($result)) {
             mysqli_free_result($result);
@@ -116,7 +116,7 @@
         $query = "INSERT INTO Address(EOI, Address, Suburb, State, Postcode) VALUES($applicant_id, '$street', '$town', '$state', $postcode); ";
         $result = mysqli_query($conn, $query);
         if (!$result) {
-            echo "<p>something is wrong $query</p>";
+            echo mysqli_error($conn);
         }
         if (isset($result) && is_resource($result)) {
             mysqli_free_result($result);
@@ -131,7 +131,7 @@
         }
         $result = mysqli_query($conn, $query);
         if (!$result) {
-            echo "<p class = 'wrong'> Something is wrong with ", $query, "</p>";
+            echo mysqli_error($conn);
 
         } else {
 
