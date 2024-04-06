@@ -1351,7 +1351,7 @@ body {
 @media (max-width: 574px) {
     .job__main h1 {
         letter-spacing: 1px;
-        font-size: 2.6em;
+        font-size: 2.2em;
     }
 }
 
@@ -1436,7 +1436,7 @@ aside {
 }
 
 .aside_apply_button {
-    padding: 13px 10px;
+    padding: 10px 20px;
     text-decoration: none;
     background-color: #007ea7;
     color: #ffffffe5;

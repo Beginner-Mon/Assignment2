@@ -84,7 +84,7 @@
                 <p>AI is growing stronger and faster than ever. Are you passionate about shaping the future with
                     Artificial Intelligence? Join our dynamic team at Lapis as an AI Engineer!</p>
                 <aside>
-                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply</a>
                 </aside>
             </div>
             <div class="job_detail_content1">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <br>
-                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply</a>
             </div>
             <label class="Readmore" for="check1">Read more...</label>
         </div>
@@ -165,7 +165,7 @@
                 <p>Server is a crucial part of a tech company. We're seeking for skilled Server Technicians to ensure
                     the seamless operation of our server infrastructure.</p>
                 <aside>
-                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply</a>
                 </aside>
             </div>
             <div class="job_detail_content2">
@@ -226,7 +226,7 @@
                     </div>
                 </div>
                 <br>
-                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply</a>
             </div>
             <label class="Readmore" for="check2">Read more...</label>
         </div>
@@ -241,7 +241,7 @@
                 <p>Are you dedicated to maintaining excellence in software product quality? Take the opportunity to join
                     our dynamic team as a Quality Assurance Tester today!</p>
                 <aside>
-                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                    <a href="apply.php" class="aside_apply_button" target="_blank">Apply</a>
                 </aside>
             </div>
             <div class="job_detail_content3">
@@ -307,7 +307,7 @@
                     </div>
                 </div>
                 <br>
-                <a href="apply.php" class="aside_apply_button" target="_blank">Apply now</a>
+                <a href="apply.php" class="aside_apply_button" target="_blank">Apply</a>
             </div>
             <label class="Readmore" for="check3">Read more...</label>
         </div>
