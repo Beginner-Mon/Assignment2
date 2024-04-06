@@ -48,6 +48,7 @@ if (!$result) {
         . "<th scope=\"col\">DoB</th>"
         . "<th scope=\"col\">Phone</th>"
         . "<th scope=\"col\">Email</th>"
+        . "<th scope=\"col\">Job ref</th>"
         . "<th scope=\"col\">Skill_1</th>"
         . "<th scope=\"col\">Skill_2</th>"
         . "<th scope=\"col\">Skill_3</th>"
@@ -66,6 +67,7 @@ if (!$result) {
 
         echo "<td>", $item["Phone"], "</td>";
         echo "<td>", $item["Email"], "</td>";
+        echo "<td>", $item["Job_ref"], "</td>";
         echo "<td>", $item["Skill_1"], "</td>";
         echo "<td>", $item["Skill_2"], "</td>";
         echo "<td>", $item["Skill_3"], "</td>";
