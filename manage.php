@@ -270,7 +270,7 @@
                     </div>
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h2 class="display-6 text-center">SKill list</h2>
+                            <h2 class="display-6 text-center">Skill list</h2>
                         </div>
                         <?php
 
