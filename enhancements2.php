@@ -107,7 +107,7 @@
                 <code class="enhance2__container__code">
     //prevent session hijacking
     session_regenerate_id(true);
-            </code>
+                </code>
                 <p class="enhance2__code__explain">Session regenerate id helps prevent attackers from hijacking a
                     session by stealing the session id.<br> By changing the id constantly, even if the attacker obtain
                     an id, it became useless as soon as the session is regenerated.</p>
@@ -136,6 +136,10 @@
             </div>
 
         </section>
+        <div class="enhance--video">
+            <h1>Demonstration</h1>
+            <a href="https://www.youtube.com/watch?v=BPm6mkWZbWs">Video</a>
+        </div>
     </main>
 
     <?php require_once ("footer.inc"); ?>
