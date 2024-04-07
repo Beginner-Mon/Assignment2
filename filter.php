@@ -19,8 +19,9 @@ INNER JOIN Skills on Applicant.EOI = Skills.EOI
 INNER JOIN Job_description on Applicant.Job_ID = Job_description.Job_ID WHERE 1 ";
 
 if (!empty($filter_value_ID)) {
-    $query .= " AND Job_ID = '$filter_value_ID'";
+    $query .= " AND Job_description.Job_ID = '$filter_value_ID'";
 }
+
 
 if (!empty($filter_value_Fname)) {
     $query .= " AND fname LIKE '%$filter_value_Fname%'";
@@ -64,7 +65,6 @@ if (!$result) {
         echo "<td>", $item["lname"], "</td>";
         echo "<td>", $item["Gender"], "</td>";
         echo "<td>", $item["DoB"], "</td>";
-
         echo "<td>", $item["Phone"], "</td>";
         echo "<td>", $item["Email"], "</td>";
         echo "<td>", $item["Job_ref"], "</td>";
