@@ -3,7 +3,7 @@
 
 <head>
     <?php require_once "head.inc"; ?>
-    <!-- <link rel="stylesheet" href="style/enhance2.css"> -->
+
     <link rel="stylesheet" href="style/style.css">
     <title>Enhancements 2</title>
 </head>
